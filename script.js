@@ -20,11 +20,11 @@ let mark = 60;
 let result = {};
 
 // Add bonus marks using an assignment operator (+=).
-let bonusMarks = 5;
+let bonusMarks = 1;
 mark += bonusMarks;
-
+    
 //Mark Validation
-if(mark < 0 && mark > 100) {
+if(mark < 0 || mark > 100) {
     console.error("Mark should be between 0 to 100");
     return;
 }
